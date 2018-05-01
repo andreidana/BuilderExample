@@ -12,3 +12,8 @@
 - It lets you vary a products internal representation
 - It isolates code for construction and representation
 - It gives you finer control over the construction process
+
+**Related Patterns**
+
+- [Abstract Factory](https://github.com/andreidana/AbstractFactoryExample)
+- [Composite](https://github.com/andreidana/CompositePattern)
