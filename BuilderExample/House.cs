@@ -2,41 +2,35 @@
 {
     public class House
     {
-        private string _name;
-        private bool _foundation;
-        private int _walls;
-        private int _rooms;
-        private bool _roof;
-
-        public string Name => _name;
-        public bool Foundation => _foundation;
-        public int Walls => _walls;
-        public int Rooms => _rooms;
-        public bool Roof => _roof;
+        public string Name { get; }
+        public bool Foundation { get; private set; }
+        public int Walls { get; private set; }
+        public int Rooms { get; private set; }
+        public bool Roof { get; private set; }
 
         public House(string name)
         {
-            _name = name;
+            Name = name;
         }
 
         public void BuildFoundation(bool foundationBuilt)
         {
-            _foundation = foundationBuilt;
+            Foundation = foundationBuilt;
         }
 
         public void BuildWalls(int numberOfBuiltWalls)
         {
-            _walls = numberOfBuiltWalls;
+            Walls = numberOfBuiltWalls;
         }
 
         public void BuildRooms(int numberOfBuiltRooms)
         {
-            _rooms = numberOfBuiltRooms;
+            Rooms = numberOfBuiltRooms;
         }
 
         public void BuildRoof(bool roofBuilt)
         {
-            _roof = roofBuilt;
+            Roof = roofBuilt;
         }
     }
 }

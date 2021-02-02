@@ -39,6 +39,7 @@ namespace BuilderExample
             Console.WriteLine($"Number of walls - {builtHouse.Walls}");
             Console.WriteLine($"Number of rooms - {builtHouse.Rooms}");
             Console.WriteLine($"Roof is built - {builtHouse.Roof}");
+            Console.ReadKey();
         }
     }
 }
